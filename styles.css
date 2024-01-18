@@ -27,3 +27,112 @@ html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px; /* esto quiere decir q el width no se va a hacer mas chico q 320(q es la pantalla mas chica en celulres) */
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+header img {
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center; /* para alinear al centro */
+}
+.container-encabezados{
+    width: 90%;
+    min-width: 288px; /* 288px es el minimo de la pantalla mas chica */
+    max-width: 900px; /* crecerá como max 900px */
+    margin-top: 40px;
+    text-align: center;
+    align-self: center; /* para alinear al centro COMO estoy utilizando display:flex en el PADRE(header)*/
+}
+.container-encabezados h1 {
+    font-size: 2.4rem; /* equivale a 24px */
+    font-weight: bold;
+    line-height: 2.6rem; /* equivale a 26px (regula el espacio en blanco entre renglones)*/
+    color: var(--just-white);
+}
+.header-parrafo{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+.header-button{
+    position: absolute; /* al utilizar position absolute PUEDO usar top,bottom, left,rigth PARA posicionar el elemnto */
+    left: calc(50% - 114.5px); /* 50% es la mitad del ancho del padre(header) y le resto la mitad del ancho del elemento */
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--off-white);
+    /* sombra */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.18);
+    border: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--warm-black);
+    
+}
+/* .header-button:hover{
+    background-color: var(--warm-black);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.18);
+    border: none;
+    color: var(--just-white);
+} */
+.icono-boton-header{
+    display: inline-block;
+    width: 10px;
+    height: 14px;
+    background-image: url('./assets/iconos/mdi_keyboard_arrow_down\ \(2\).png');
+    color: var(--warm-black);
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+.backgroundIgm{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto; /* centro la img */
+    margin-bottom: 50px;
+    background-image: url('./assets/imgs/bitcoin.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container-section1{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.container-section1 h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+}
+.container-section1 p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: gray;
+}
