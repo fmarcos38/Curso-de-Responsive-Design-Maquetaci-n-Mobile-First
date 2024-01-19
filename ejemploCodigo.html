@@ -1,0 +1,37 @@
+<!-- 
+    Recuerda que puedes crear toda estructura con una sola línea de código utilizando Emmet, de esta forma:
+
+    (div>h2+p)+section>article>p+div>h3+p*2+button
+-->
+
+<!-- <sup> define un fragmento de texto que se debe mostrar, 
+    por razones tipográficas, más alto, y generalmente más pequeño, 
+    que el tramo principal del texto, es decir, en superíndice. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="plans" class="main-plans-container">
+        <div class="plans--title">
+            <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+            <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+        </div>
+        <section class="plans-container--slider">
+            <article class="plans-container--card">
+                <p class="recomended">Recomendado</p>
+                <div class="plan-info-container">
+                    <h3 class="plan-card--title">Pago Anual</h3>
+                    <p class="plan-card--price"><sup>$</sup> 99</p>
+                    <p class="plan-card--saving">*Ahorras $129 comparado al plan mensual.</p>
+                    <button class="plan-card--ca">Escoge este <span></span></button>
+                </div>
+            </article>
+        </section>
+    </section>
+</body>
+</html>

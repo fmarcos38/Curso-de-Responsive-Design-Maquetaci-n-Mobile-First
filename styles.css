@@ -27,7 +27,12 @@ html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
 header{
     position: relative;
     display: flex;
@@ -115,13 +120,13 @@ main{
     background-position: center;
 }
 .container-section1{
-    width: 90%;
+    width: 100%;
     min-width: 288px;
-    max-width: 900px;
     margin: 0 auto;
     padding-top: 80px;
     padding-bottom: 40px;
     text-align: center;
+    background-color:rgb(239, 233, 233);
 }
 .container-section1 h2{
     font-size: 2.4rem;
@@ -135,4 +140,290 @@ main{
     font-weight: 500;
     line-height: 1.8rem;
     color: gray;
+}
+/* section table */
+.containerMonedas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto; /* centro la tabla (margen sup e inf 0; izq - der auto)*/
+    font-family: "Inter", sans-serif;
+}
+.containerMonedas .tituloMoneda{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+    margin-right: 150px;
+}
+.containerTabla{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+.containerTabla table{
+    width: 100%;
+    height: 100%;  
+    border-radius: 5px; 
+}
+.containerTabla td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+    /* marcar en gris los bordes de cada celda */
+    /* border: 1px solid var(--grey); */
+
+}
+/* redondeo los extremos de la tabla */
+.containerTabla .col-top-izq {
+    border-radius: 15px 0 0 0;
+}
+.containerTabla .col-top-der {
+    border-radius: 0 15px 0 0;
+}
+.containerTabla .col-bottom-izq {
+    border-radius: 0 0 0 15px;
+}
+.containerTabla .col-bottom-der {
+    border-radius: 0 0 15px 0;
+}
+/* --fin redondeo los extremos de la tabla-- */
+.containerTabla .col-der {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.iconoTablaValor{
+    display: inline-block;
+    width: 10px;
+    height: 14px;
+    margin-left: 10px;
+    background-image: url('./assets/iconos/trending-down\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--warm-black);
+}
+.msjActualizacion{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1rem;
+    color: var(--warm-black);
+}
+/* section 2 */
+.container-section2{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--black);
+}
+/* Elevamos la mitad del logo hacia fuera del contenedor con top: -10px.
+Lo centramos con ***left: calc(50% - 20px)***, donde 50% lo coloca en la mitad, pero no lo centra. Esto se debe a que el logo tiene dimensiones (40px para ser precisos), y como queremos que esté justo en la mitad, le quitamos la mitad de su ancho (20px), posicionándolo justo en el centro. */
+.container-section2 .logo-sect2{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: -12px;
+    left: calc(50% - 20px);
+}
+.container-encabezado-s2{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.encabezado-h2-s2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+    text-align: center;
+}
+.encabezado-p-s2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    text-align: center;
+    color: var(--grey);
+}
+.tarjeta{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    min-height: 150px; /* para que no se achique la tarjeta cuando no hay texto */
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.logoTarjeta{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+.titulo-tarjeta{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.texto-tarjeta{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--grey);
+}
+/* section 3 */
+.container-section3{
+    width: 100%;
+    min-width: 320px;
+    max-width: 750px;
+    height: 50vh;    
+    background-image: url('./assets//imgs/bitcoinbaby.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container-section3 h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* section 4 */
+.container-section4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--off-white);
+}
+.container-section4 h2{
+    margin-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+
+}
+.subtitulo-sect4{
+    margin-top: 25px;
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: gray;
+
+}
+.recomendado {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    top: -15px;
+    left: calc(50% - 60px); /* 50% es la mitad del ancho del padre(header) y le resto la mitad del ancho del elemento(width:120/2=60) */
+    font-size: 1.2rem;
+    padding: 6px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+    text-align: center;
+}
+/* creo estilos para tarjeta */
+.tarjeta-section4{
+    position: relative;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    margin: 15px auto;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.titulo-tarjeta-plan {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+.plan-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    padding: 0 15px;
+    border-radius: 0 0 15px 15px;
+
+}
+.plan-card--price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--black);
+}
+.plan-card--price sup {
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: 25px;
+}
+.plan-card-description{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #757575;
+}
+.buttom-planes {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+.arrow-rigth{
+    display: inline-block;
+    width: 20px;
+    height: 20px;    
+    vertical-align: text-bottom;
+}
+@media (min-width: 668px) {
+    .container-section3{
+        height: 800px;
+    }
 }
